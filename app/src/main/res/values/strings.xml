@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">AYD Attendance</string>
+    <string-array name="spinner_item">
+        <item>exp_attend</item>
+        <item>exp_leave</item>
+        <item>wrk_attend</item>
+        <item>wrk_leave</item>
+    </string-array>
+    <string-array name="type_acco">
+        <item>check_in</item>
+        <item>return_d0</item>
+        <item>leave_d1</item>
+        <item>return_d1</item>
+        <item>leave_d2</item>
+        <item>return_d2</item>
+        <item>leave_d3</item>
+        <item>return_d3</item>
+        <item>leave_d4</item>
+        <item>return_d4</item>
+        <item>check_out</item>
+    </string-array>
+    <string-array name="bus_no">
+        <item>exp_attend</item>
+        <item>exp_leave</item>
+        <item>wrk_attend</item>
+        <item>wrk_leave</item>
+    </string-array>
+    <string-array name="member_type">
+        <item>committee</item>
+        <item>participant</item>
+    </string-array>
+    <string-array name="mg_id">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+    </string-array>
+
+    <string-array name="did_id">
+        <item>BDG</item>
+        <item>BOO</item>
+        <item>DPS</item>
+        <item>JKT</item>
+        <item>MKS</item>
+        <item>MLG</item>
+        <item>PLB</item>
+        <item>PTK</item>
+        <item>PWT</item>
+        <item>SBY</item>
+        <item>SMG</item>
+    </string-array>
+
+    <string name="action_logout">Logout</string>
+    <string name="action_profile">Profile</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string name="title_activity_login">Login</string>
+</resources>

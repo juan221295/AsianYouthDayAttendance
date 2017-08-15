@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.ac.ukdw.ayd.trial.activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/spnAcara"
+        android:entries="@array/spinner_item"
+        android:layout_below="@+id/rb_event"
+        android:layout_alignStart="@+id/spn_mg_id" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spn_mg_id"
+        android:entries="@array/mg_id"
+        android:layout_below="@+id/spnAcara"
+        android:layout_toEndOf="@+id/tvNamaPanitia"
+        android:layout_alignStart="@+id/btnScan" />
+
+    <TextView
+        android:text="Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spn_mg_id"
+        android:layout_alignEnd="@+id/rb_event"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:text="mg_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spn_mg_id"
+        android:layout_alignStart="@+id/textView5"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Panitia :"
+        android:id="@+id/tvNamaPanitia"
+        android:textStyle="bold"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/btnScan"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:text="Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_event"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNamaPanitia"
+        android:layout_alignBaseline="@+id/tvNamaPanitia"
+        android:layout_alignBottom="@+id/tvNamaPanitia"
+        android:layout_toEndOf="@+id/rb_daily"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:text="Scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:id="@+id/btnScan"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_member_type"
+        android:entries="@array/member_type"
+        android:layout_below="@+id/rb_daily"
+        android:layout_marginTop="13dp"
+        android:layout_alignStart="@+id/spn_mg_id" />
+
+    <TextView
+        android:text="Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_alignBaseline="@+id/spn_member_type"
+        android:layout_alignBottom="@+id/spn_member_type"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_bus_no"
+        android:layout_alignBottom="@+id/did_id"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/spn_member_type" />
+
+    <RadioButton
+        android:text="Daily Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/rb_daily"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_live_in"
+        android:text="Accomodation"
+        android:layout_below="@+id/spn_member_type"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:text="Bus No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/did_id"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/rb_live_in"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:text="Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/did_id"
+        android:layout_alignStart="@+id/did_id"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView8" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spn_type_acco"
+        android:entries="@array/type_acco"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/spn_bus_no" />
+
+
+</RelativeLayout>
